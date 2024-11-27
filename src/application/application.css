@@ -1,0 +1,23 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.nv-header
+{
+	-fx-background-color: linear-gradient(to bottom right,#098c53,#246861);
+}
+.nv-form
+{
+	-fx-background-color: linear-gradient(to bottom right,#0f6789,#286155);
+}
+
+.shadow
+{
+	-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+	
+}
+
+.white-bg
+{
+	-fx-background-color:#fff;
+	-fx-background-radius:8px;
+	
+}

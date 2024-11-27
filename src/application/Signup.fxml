@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #3e5986;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignupSceneController">
+   <children>
+      <Pane layoutX="197.0" layoutY="55.0" prefHeight="500.0" prefWidth="370.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label fx:id="Title2" alignment="CENTER" layoutX="128.0" layoutY="45.0" prefHeight="43.0" prefWidth="115.0" text="Signup" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="btnRegister" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnLoginClicked" prefHeight="26.0" prefWidth="234.0" style="-fx-background-radius: 100; -fx-background-color: #2ecc71;" text="Register" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="emailField" layoutX="35.0" layoutY="201.0" prefHeight="18.0" prefWidth="311.0" promptText="Email" />
+            <CheckBox fx:id="cb" layoutX="39.0" layoutY="324.0" mnemonicParsing="false" onAction="#changeVisibility" text="show password" />
+            <TextField fx:id="passwordShown" layoutX="35.0" layoutY="290.0" prefHeight="25.0" prefWidth="311.0" promptText="password" />
+            <PasswordField fx:id="passwordHidden" layoutX="34.0" layoutY="290.0" prefHeight="25.0" prefWidth="311.0" promptText="password" />
+            <CheckBox fx:id="cb2" layoutX="39.0" layoutY="358.0" mnemonicParsing="false" text="Check if you are an employer" />
+            <Button fx:id="LoginBtn" layoutX="196.0" layoutY="443.0" mnemonicParsing="false" onAction="#changeToSigninScene" style="-fx-background-color: transparent;" text="Login now" textFill="#0034ff" />
+            <Text layoutX="95.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Registered?" />
+            <TextField fx:id="nameField" layoutX="34.0" layoutY="112.0" prefHeight="18.0" prefWidth="311.0" promptText="Name" />
+            <TextField fx:id="contactField" layoutX="35.0" layoutY="157.0" prefHeight="18.0" prefWidth="311.0" promptText="Contact" />
+            <TextField fx:id="usernameField" layoutX="35.0" layoutY="244.0" prefHeight="18.0" prefWidth="311.0" promptText="Username" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
